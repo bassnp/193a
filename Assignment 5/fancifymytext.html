@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif; 
+            background-color: #ffffff; 
+        }
+        button {
+            background-color: #000000; /* Equivalent to bg-blue-500 */
+            color: white;
+        }
+        input[type="radio"] {
+            accent-color: #000000; /* Styles the checked state color */
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1>Fun with JavaScript</h1>
+	
+    <fieldset>
+        <legend>Text</legend>
+        <textarea id="textArea" rows="4" cols="30" placeholder="..."></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Fancify</legend>
+        <div class="controls-container">
+             <button id="biggerButton">Bigger!</button>
+			 <button id="mooButton">Moo!</button>
+        </div>
+         <div class="radio-container">
+            <label>
+                <input type="radio" id="fancyRadio" name="fanciness" value="fancy">
+                FancyShmancy
+            </label>
+            <label>
+                <input type="radio" id="boringRadio" name="fanciness" value="boring" checked> BoringBetty
+            </label>
+        </div>
+    </fieldset>
+
+	<script src="fancifymytext.js"></script>
+</body>
+</html>
